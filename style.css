@@ -1,0 +1,66 @@
+* {
+    border:1px solid gray;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    
+}
+
+.textarea {
+    flex-basis: 20%;
+    
+}
+
+.opperands {
+    flex-basis: 16%;
+}
+
+.bottom {
+    display: flex;
+    flex-basis: 64%;
+    border: 0px;
+    
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    align-items: stretch;
+    border:0px;
+}
+
+.equal-sign {
+    flex: 1;
+    background-color: greenyellow;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.equal {
+    height: 50px;
+    margin: auto;
+    border: 0;
+    font-weight: 900;
+    font-size: 50px;
+    color: gray;
+}
+
+.numbersChild {
+    flex-basis: 25%;
+
+}
