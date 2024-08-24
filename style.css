@@ -1,8 +1,6 @@
 * {
-    border:1px solid gray;
-
+    border: 1px solid gray;
 }
-
 body {
     display: flex;
     justify-content: center;
@@ -15,52 +13,104 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    
     
 }
+
+/* TEXTAREA */
 
 .textarea {
     flex-basis: 20%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
 }
+
+.text {
+    height: 80%;
+    width: 90%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 38px;
+}
+
+
+/* operands row */
 
 .opperands {
     flex-basis: 16%;
+    display: flex;
 }
+
+.opperand {
+    flex: 1;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+
+/* bottom part */
+
 
 .bottom {
     display: flex;
     flex-basis: 64%;
-    border: 0px;
-    
+    border: 0px; 
 }
+
+
+/*  Numbers */
+
 
 .numbers {
     display: flex;
     flex-direction: column;
-    flex-basis: 80%;
+    flex-grow: 1;
+    flex-basis: 75%;
     align-items: stretch;
     border:0px;
 }
 
+.numbersChild {
+    flex-basis: 25%;
+    display: flex;
+}
+
+.number {
+    flex:1;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.clear {
+    color: red;
+}
+
+
+/* Equal sign */
+
+
 .equal-sign {
     flex: 1;
-    background-color: greenyellow;
+    flex-basis:25%;
+    background-color:red;
     align-content: center;
     display: flex;
     justify-content: center;
 }
 
 .equal {
-    height: 50px;
-    margin: auto;
+    height: auto;
+    width: 100%;
     border: 0;
     font-weight: 900;
     font-size: 50px;
+    background-color: greenyellow;
     color: gray;
-}
-
-.numbersChild {
-    flex-basis: 25%;
+    flex:1;
 
 }
