@@ -10,7 +10,17 @@ const display = document.querySelector('.text');
 const equal = document.querySelector('.equal');
 equal.addEventListener('click', () => {
     calculate();
+    opperation = [];
     storedValue = [];
+})
+
+// clear button
+const clear = document.querySelector('.clear');
+clear.addEventListener('click', () => {
+    storedValue = [];
+    currentValue = [];
+    opperation = [];
+    updateScreen(0);
 })
 
 // get all elements with class 'number'
