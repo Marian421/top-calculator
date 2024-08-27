@@ -9,6 +9,9 @@ const display = document.querySelector('.text');
 // get equal sign
 const equal = document.querySelector('.equal');
 equal.addEventListener('click', () => {
+    if (storedValue.length === 0) {
+        return;
+    }
     calculate();
     opperation = [];
     storedValue = [];
@@ -108,7 +111,7 @@ function divide(firstArray, secondArray) {
     let A = parseInt(secondArray.join(""));
     let B = parseInt(firstArray.join(""));
     let result = A / B;
-    return result.toString().split("");
+    return result.toFixed(2).toString().split("");
     
 }
 // function for display
